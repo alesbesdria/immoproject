@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+/* #E9BAD2 */
+
+:root{
+    --pink: #e9bad2;
+    --montserrat: "Montserrat", sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: var(--montserrat);
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    position: sticky;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 90%;
+    max-width: max-content;
+}
+
+li >a{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black
+}
+
+li{
+    list-style-type: none;
+}
+
+.outils{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--pink);
+    border: black 1px solid;
+}
+
+.lienoutils{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.outilestimation{
+    margin-right: 10px;
+    border: 1px solid var(--pink);
+    height: 45px;
+    width: 150px;
+    font-size: 16px;
+}
+
+.coeur{
+    height: 20px;
+}
+
+.proprietaire{
+    height: 20px;
+}
+
+menu{
+    margin-left: 0px;
+}
+
+.maison{
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+}
+
+.mefspan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-top: -130px;
+    z-index: 2;
+}
+
+.accroche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: rgba(233, 186, 210, 0.90);
+    color: white;
+    font-size: 28px;
+    /* margin-top: -200px; */
+    z-index: 3;
+    opacity: 0.85;
+}
+
+.recherche{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.mefform{
+    display: flex;
+    visibility: hidden;
+}
+
+.menusearch{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbtn{
+    height: 42px;
+    width: 72px;
+    font-family: var(--montserrat);
+    background-color: rgba(255,255,255,0.6);
+    /* border: 1px white solid; */
+    border-width : 0
+}
+
+summary::-webkit-details-marker {
+    display: none
+   }
+    summary:after {
+    content: "+";
+    color: #fff;
+    float: right;
+    }
+   
+    details[open] summary:after {
+    content: "-";
+    }
+
+    .casesearch{
+        color: #545454;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        width: 192px;
+        height: 60px;
+    }
+
+    .senscase{
+        display: flex;
+        flex-direction: column;
+    }
