@@ -1,3 +1,5 @@
+console.log("Script JavaScript chargé !");
+
 const showvente = document.querySelector(".vente");
 const formsearchvente = document.querySelector(".searchvente");
 
@@ -11,20 +13,20 @@ showvente.addEventListener('click', showsearchvente);
 showlocation.addEventListener('click', showsearchlocation);
 showviager.addEventListener('click', showsearchviager);
 
-function showsearchvente(){
-    navshow.classList.show("formsearchvente");
-    navshow.classList.hide("formsearchlocation");
-    navshow.classList.hide("formsearchviager");
+function showsearchvente() {
+    formsearchvente.style.display = "block";
+    formsearchlocation.style.display = "none";
+    formsearchviager.style.display = "none";
 }
 
-function showsearchlocation(){
-    navshow.classList.hide("formsearchvente");
-    navshow.classList.show("formsearchlocation");
-    navshow.classList.hide("formsearchviager");
+function showsearchlocation() {
+    formsearchvente.style.display = "none";
+    formsearchlocation.style.display = "block";
+    formsearchviager.style.display = "none";
 }
 
-function showsearchviager(){
-    navshow.classList.hide("formsearchvente");
-    navshow.classList.hide("formsearchlocation");
-    navshow.classList.show("formsearchviager");
+function showsearchviager() {
+    formsearchvente.style.display = "none";
+    formsearchlocation.style.display = "none";
+    formsearchviager.style.display = "block";
 }
