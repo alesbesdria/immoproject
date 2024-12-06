@@ -140,6 +140,16 @@ menu{
     margin-right: 70px;
 }
 
+.searchlocation{
+    /* visibility: hidden; */
+    display: none;
+}
+
+.searchviager{
+    /* visibility: hidden; */
+    display: none;
+}
+
 .menusearch{
     display: flex;
     flex-direction: column;

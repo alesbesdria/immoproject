@@ -69,25 +69,11 @@
         </div>
         <section class="recherche">
             <div class="menusearch">
-                <button class="searchbtn vente">Vente</button>
-
-                <!-- <form class="mefform" action="">
-                    <details>
-                        <summary class="casesearch">Type de bien</summary>
-                        <div class="senscase">
-                        <span>Appartement</span>
-                        <span>Maison</span>
-                        <summary>Localisation</summary>
-                        </div>
-                    </details>
-                    <input class="casesearch" type="search" placeholder="Budget max (€)">
-                    <input class="casesearch" type="number" placeholder="Surface min (m²)">
-                </form> -->
+                <button type="button" class="searchbtn vente">Vente</button>
             </div>
 
             <div class="menusearch">
-                <button class="searchbtn location">Location</button>
-
+                <button type="button" class="searchbtn location">Location</button>
                 <!-- <form class="mefform" action="">
                     <details>
                         <summary class="casesearch">Type de bien</summary>
@@ -103,9 +89,38 @@
             </div>
 
             <div class="menusearch">
-                <button class="searchbtn viager">Viager</button>
+                <button type="button" class="searchbtn viager">Viager</button>
+            </div>
 
-                <!-- <form class="mefform" action="">
+        </section>
+        <form class="mefform  searchvente" action="">
+            <details>
+                <summary class="casesearch">Type de bien</summary>
+                <div class="senscase">
+                    <span>Appartement</span>
+                    <span>Maison</span>
+                    <summary>Localisation</summary>
+                </div>
+            </details>
+            <input class="casesearch" type="search" placeholder="Budget max (€)">
+            <input class="casesearch" type="number" placeholder="Surface min (m²)">
+        </form>
+
+        <form class="mefform searchlocation" action="">
+            <details>
+                <summary class="casesearch">Type de bien</summary>
+                <div class="senscase">
+                    <span>Appartement</span>
+                    <span>Maison</span>
+                    <summary>Localisation</summary>
+                </div>
+            </details>
+            <input class="casesearch" type="search" placeholder="Budget max (€)">
+            <input class="casesearch" type="number" placeholder="Surface min (m²)">
+        </form>
+
+        
+                <form class="mefform searchviager" action="">
                     <details>
                         <summary class="casesearch">Type de bien</summary>
                         <div class="senscase"></div>
@@ -116,22 +131,10 @@
                     </details>
                     <input class="casesearch" type="search" placeholder="Budget max (€)">
                     <input class="casesearch" type="number" placeholder="Surface min (m²)">
-                </form> -->
-            </div>
+                </form>
 
-        </section>
-        <form class="mefform" action="">
-            <details>
-                <summary class="casesearch">Type de bien</summary>
-                <div class="senscase">
-                <span>Appartement</span>
-                <span>Maison</span>
-                <summary>Localisation</summary>
-                </div>
-            </details>
-            <input class="casesearch" type="search" placeholder="Budget max (€)">
-            <input class="casesearch" type="number" placeholder="Surface min (m²)">
-        </form>
+
+
     </main>
 
 </body>
