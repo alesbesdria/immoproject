@@ -5,11 +5,13 @@
 :root{
     --pink: #e9bad2;
     --montserrat: "Montserrat", sans-serif;
+    --grey: #535353;
 }
 
 html{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 body{
@@ -63,7 +65,7 @@ li{
     align-items: center;
     justify-content: space-around;
     background-color: var(--pink);
-    border: black 1px solid;
+    border: solid 2px var(--grey);
 }
 
 .lienoutils{
@@ -126,18 +128,23 @@ menu{
 .recherche{
     margin-top: 10px;
     display: flex;
-    margin-left: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
     font-size: 20px;
 }
 
 .mefform{
     display: flex;
-    visibility: hidden;
+    /* visibility: hidden; */
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .menusearch{
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .searchbtn{
