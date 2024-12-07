@@ -75,18 +75,6 @@
 
             <div class="menusearch">
                 <button type="button" class="searchbtn location">Location</button>
-                <!-- <form class="mefform" action="">
-                    <details>
-                        <summary class="casesearch">Type de bien</summary>
-                        <div class="senscase">
-                        <span>Appartement</span>
-                        <span>Maison</span>
-                        <summary>Localisation</summary>
-                    </div>
-                    </details>
-                    <input class="casesearch" type="search" placeholder="Loyer max (€/mois)">
-                    <input class="casesearch" type="number" placeholder="Surface min (m²)">
-                </form> -->
             </div>
 
             <div class="menusearch">
@@ -95,14 +83,70 @@
         </section>
 
         <form class="mefform  searchvente" action="">
-            <details>
+            <!-- <details>
                 <summary class="casesearch">Type de bien</summary>
                 <div class="senscase">
                     <span>Appartement</span>
                     <span>Maison</span>
-                    <summary>Localisation</summary>
+                    <span>Location</span>
+                    <select name="houses" id="houseselect" >
+                        <option value="Appartement">Appartement</option>
+                        <option value="Maison">Maison</option>
+                        <option value="Location">Location</option>
+                    </select>
+                </div>
+            </summary>
+            </details> -->
+
+            <!-- <details>
+                <summary class="casesearch">Type de bien</summary>
+                <div class="senscase">
+                    <select name="houses" id="houseselect" multiple>
+                        <option value="Appartement">Appartement</option>
+                        <option value="Maison">Maison</option>
+                        <option value="Location">Location</option>
+                    </select>
+                </div>
+            </details> -->
+
+            <details>
+                <summary class="casesearch">Type de bien</summary>
+            <div id="selectedTypes" class="selected-types"></div>
+
+                <div class="senscase">
+                    <label>
+                        <input type="checkbox" value="Appartement">
+                        <span>Appartement</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Maison">
+                        <span>Maison</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Location">
+                        <span>Location</span>
+                    </label>
                 </div>
             </details>
+
+            <div class="case">
+                <div>
+                <label for="select" class="casesearch">Type de bien</label>
+                <select name="houses" id="houseselect" >
+                    <option value="Appartement">Appartement</option>
+                    <option value="Maison">Maison</option>
+                    <option value="Location">Location</option>
+                    <!-- <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option> -->
+                </select>
+                </div>
+            </div>
+
+
+
+
             <input class="casesearch" type="search" placeholder="Budget max (€)">
             <input class="casesearch" type="number" placeholder="Surface min (m²)">
         </form>
@@ -116,7 +160,7 @@
                     <summary>Localisation</summary>
                 </div>
             </details>
-            <input class="casesearch" type="search" placeholder="Budget max (€)">
+            <input class="casesearch" type="search" placeholder="Loyer max (€/mois)">
             <input class="casesearch" type="number" placeholder="Surface min (m²)">
         </form>
 

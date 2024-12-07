@@ -140,15 +140,16 @@ menu{
     margin-right: 70px;
 }
 
-.searchlocation{
-    /* visibility: hidden; */
-    display: none;
+.searchvente,
+.searchlocation,
+.searchviager {
+    display: none; 
 }
 
-.searchviager{
-    /* visibility: hidden; */
-    display: none;
+.searchvente {
+    display: flex; 
 }
+
 
 .menusearch{
     display: flex;
@@ -181,9 +182,13 @@ summary::-webkit-details-marker {
 
     .casesearch{
         color: #545454;
-        font-size: 14px;
+        font-size: 10px;
+        /* display: flex; */
+    }
+
+    .case{
         display: flex;
-        align-items: center;
+        flex-direction: column;
         width: 192px;
         height: 60px;
     }
@@ -191,4 +196,58 @@ summary::-webkit-details-marker {
     .senscase{
         display: flex;
         flex-direction: column;
+    }
+
+    summary::-webkit-details-marker {
+        display: none; /* Cache la flèche native du navigateur */
+    }
+    
+    summary {
+        position: relative;
+        padding-right: 20px; /* Ajoute de l'espace à droite pour la flèche */
+        cursor: pointer;
+    }
+    
+    summary:after {
+        content: "▼"; /* Ajoute une flèche personnalisée */
+        position: absolute;
+        right: 10px; /* Positionne la flèche à droite */
+        color: #545454; /* Couleur de la flèche */
+        font-size: 12px; /* Taille de la flèche */
+    }
+    
+    details[open] summary:after {
+        content: "▲"; /* Change la flèche lorsque l'élément est ouvert */
+    }
+
+
+
+
+
+
+
+
+
+    .senscase label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    
+    .senscase input[type="checkbox"] {
+        margin-right: 8px; /* Ajoute un espace entre la case et le texte */
+        cursor: pointer;
+    }
+
+
+    .selected-types {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #545454;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 8px;
+        min-height: 20px;
     }
