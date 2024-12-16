@@ -58,7 +58,7 @@ function updateSelectedTypes() {
     
     // Met à jour le contenu de la div
     if (selectedValues.length > 0) {
-        selectedTypesDiv.textContent = `Vous avez sélectionné : ${selectedValues.join(', ')}`;
+        selectedTypesDiv.textContent = `${selectedValues.join(', ')}`;
     } else {
         selectedTypesDiv.textContent = "Aucune sélection";
     }
